@@ -1,4 +1,4 @@
-# Code Repository for Imputation
+# Sample Code for Imputation
 
 Jenna C. Carlson
 University of Pittsburgh
@@ -18,7 +18,7 @@ This work is licensed under a
 
 This repository contains example code used for imputation from "The extent to which augmenting extant reference panels with population-specific sequences improves imputation quality in Samoans." 
 
-Details about files...
+The file `impute_chr21_example.sh` contains example code that takes an indexed vcf file of phased reference haplotypes (e.g., from [TOPMed](https://topmed.nhlbi.nih.gov/)). It first creates an m3vcf files with  [Minimac3](https://genome.sph.umich.edu/wiki/Minimac3) and then imputes with [Minimac4](https://genome.sph.umich.edu/wiki/Minimac4).
 
 ## Contact Information
 If you have questions or comments, please feel free to contact us.
