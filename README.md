@@ -32,10 +32,13 @@ The steps of imputation are as follows:
 
 The code for these steps are in `01_align_example.sh`, `02_phase_geno_example.sh`, `03_phase_ref_example.sh`, and `04_impute_example.sh`. 
 
-In `01_align_example.sh`, the genotyping array data is aligned with the reference panel using [Genotype Harmonizer](https://bioinformaticshome.com/tools/descriptions/Genotype_harmonizer.html#gsc.tab=0). 
-In `02_phase_geno_example.sh`, the genotyping array data is phased with [Eagle](https://alkesgroup.broadinstitute.org/Eagle/).
-In `03_phase_ref_example.sh`, the WGS data (input as an indexed VCF file) is phased with [Eagle](https://alkesgroup.broadinstitute.org/Eagle/).
-In `04_impute_example.sh`, starting with the phased reference panel, an m3vcf file is created with [Minimac3](https://genome.sph.umich.edu/wiki/Minimac3) and then genotypes are imputed with [Minimac4](https://genome.sph.umich.edu/wiki/Minimac4)
+In `01_align_example.sh`, the genotyping array data (starting in PLINK binary files) is aligned with the reference panel using [Genotype Harmonizer](https://bioinformaticshome.com/tools/descriptions/Genotype_harmonizer.html#gsc.tab=0), then converted to VCF format with [PLINK](https://www.cog-genomics.org/plink/) and [bcftools](https://samtools.github.io/bcftools/bcftools.html).
+
+In `02_phase_geno_example.sh`, the genotyping array data is phased with [Eagle](https://alkesgroup.broadinstitute.org/Eagle/). This uses assumes there are 10 processors available for parallel processing (numThreads=10). Depending on the capabilities of a user’s machine, this may need to be adjusted.
+
+In `03_phase_ref_example.sh`, the WGS data (input as an indexed VCF file) is phased with [Eagle](https://alkesgroup.broadinstitute.org/Eagle/). This uses assumes there are 10 processors available for parallel processing (numThreads=10). Depending on the capabilities of a user’s machine, this may need to be adjusted. Skip this step if starting with a set of phased haplotypes as a reference panel.
+
+In `04_impute_example.sh`, starting with the phased reference panel, an m3vcf file is created with [Minimac3](https://genome.sph.umich.edu/wiki/Minimac3) and then genotypes are imputed with [Minimac4](https://genome.sph.umich.edu/wiki/Minimac4). This uses assumes there are 10 processors available for parallel processing (cpus=10). Depending on the capabilities of a user’s machine, this may need to be adjusted.
 
 Note: This example code does not walk through quality control steps on the WGS data for the reference panel. It also does not subset the genotyping array data. For the manuscript mentioned above, the following steps were additionally completed:
   * Internal duplicates were removed from the reference panel. 
@@ -47,7 +50,7 @@ Note: This example code does not walk through quality control steps on the WGS d
 
 ## Execution
 The shell scripts above can be executed on a data analysis server. It is recommended that they be submitted via grid computing software (SGE or Slurm). This code was run on an internal data analysis cluster via Sun Grid Engine with two 12-core processors, 512 GB memory, and 48 TB storage.
-The software referenced above ([Eagle](https://alkesgroup.broadinstitute.org/Eagle/), [Genotype Harmonizer](https://bioinformaticshome.com/tools/descriptions/Genotype_harmonizer.html#gsc.tab=0), [Minimac3](https://genome.sph.umich.edu/wiki/Minimac3), [Minimac4](https://genome.sph.umich.edu/wiki/Minimac4)) must be installed prior to execution. 
+The software referenced above ([PLINK](https://www.cog-genomics.org/plink/), [bcftools](https://samtools.github.io/bcftools/bcftools.html), [Genotype Harmonizer](https://bioinformaticshome.com/tools/descriptions/Genotype_harmonizer.html#gsc.tab=0), [Eagle](https://alkesgroup.broadinstitute.org/Eagle/), [Minimac3](https://genome.sph.umich.edu/wiki/Minimac3), [Minimac4](https://genome.sph.umich.edu/wiki/Minimac4)) must be installed prior to execution. 
 
 ## Contact Information
 If you have questions or comments, please feel free to contact us.
