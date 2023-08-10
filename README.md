@@ -30,9 +30,9 @@ The steps of imputation are as follows:
   3. phase the reference panel (skip if starting with phased haplotypes)
   4. impute genotypes
 
-The code for these steps are in `01_align.sh`, `02_phase_geno_example.sh`, `03_phase_ref_example.sh`, and `04_impute_example.sh`. 
+The code for these steps are in `01_align_example.sh`, `02_phase_geno_example.sh`, `03_phase_ref_example.sh`, and `04_impute_example.sh`. 
 
-In `01_align.sh`, the genotyping array data is aligned with the reference panel using [Genotype Harmonizer](https://bioinformaticshome.com/tools/descriptions/Genotype_harmonizer.html#gsc.tab=0). 
+In `01_align_example.sh`, the genotyping array data is aligned with the reference panel using [Genotype Harmonizer](https://bioinformaticshome.com/tools/descriptions/Genotype_harmonizer.html#gsc.tab=0). 
 In `02_phase_geno_example.sh`, the genotyping array data is phased with [Eagle](https://alkesgroup.broadinstitute.org/Eagle/).
 In `03_phase_ref_example.sh`, the WGS data (input as an indexed VCF file) is phased with [Eagle](https://alkesgroup.broadinstitute.org/Eagle/).
 In `04_impute_example.sh`, starting with the phased reference panel, an m3vcf file is created with [Minimac3](https://genome.sph.umich.edu/wiki/Minimac3) and then genotypes are imputed with [Minimac4](https://genome.sph.umich.edu/wiki/Minimac4)
