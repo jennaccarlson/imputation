@@ -1,3 +1,5 @@
+#!/bin/sh
+
 # INPUT: an indexed vcf file of phased reference panel haplotypes (ref_panel_phased_chr21.vcf.gz)
 #        and an indexed vcf file of phased genotypes (genotypes_phased_chr21.vcf.gz)
 # OUTPUT: imputed genotypes and dosages (imputed_chr21.dose.vcf.gz) with corresponding info file (imputed_chr21.info)
