@@ -1,3 +1,5 @@
+#!/bin/sh
+
 # INPUT: PLINK binary genotyping array data (genotypes_chr21.bed, genotypes_chr21.bim, genotypes_chr21.fam) 
 #        and an indexed vcf file of the filtered reference panel WGS data (ref_panel_chr21.vcf.gz)
 # OUTPUT: aligned VCF files of genotyping data (genotypes_aligned_chr21.vcf.gz)
