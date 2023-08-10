@@ -8,4 +8,4 @@ eagle --vcf=genotypes_aligned_chr21.vcf.gz \
 	  --geneticMapFile=genetic_map_hg38_withX.txt.gz \
 	  --chrom=21 \
 	  --outPrefix=genotypes_phased_chr21 \
-	  --numThreads=5
+	  --numThreads=10
