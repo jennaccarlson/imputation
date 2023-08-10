@@ -9,7 +9,7 @@
 Minimac3-omp --refHaps ref_panel_phased_chr21.vcf.gz \ 
              --processReference \ 
              --cpus 10 \ 
-             --prefix ref_panel_chr21 
+             --prefix ref_panel_phased_chr21 
 
 # perform imputation using phased genotypes for target samples 
 minimac4 --refHaps ref_panel_phased_chr21.m3vcf.gz \ 
