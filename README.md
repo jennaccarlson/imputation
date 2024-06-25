@@ -44,12 +44,12 @@ Note: This example code does not walk through quality control steps on the WGS d
   * Internal duplicates were removed from the reference panel. 
   * Reference panel variants were filtered to those with a PASS flag from TOPMed processing.
   * Multiallelic variants were split into separate entries.
-  * Chr denotation was harmonized (e.g., all files using 'chr21' or '21' consistently).
+  * Chromosome notation was harmonized (e.g., all files using 'chr21' or '21' consistently).
   * The genotyping array data was lifted over to hg38 using [LiftOver](https://genome.ucsc.edu/cgi-bin/hgLiftOver).
   * The genotyping array data was subsetted to include only individuals not present in the reference panel WGS data. This step was used to create a fair comparison of imputation performance to other panels.  
 
 ## Execution
-The shell scripts above can be executed on a data analysis server. It is recommended that they be submitted via grid computing software (SGE or Slurm). This code was run on an internal data analysis cluster via Sun Grid Engine with two 12-core processors, 512 GB memory, and 48 TB storage.
+The shell scripts above can be executed on a data analysis server. It is recommended that they be submitted via grid computing software (Sun Grid Engine or Slurm). This code was run on an internal data analysis cluster via Sun Grid Engine with two 12-core processors, 512 GB memory, and 48 TB storage.
 The software referenced above ([PLINK](https://www.cog-genomics.org/plink/), [bcftools](https://samtools.github.io/bcftools/bcftools.html), [Genotype Harmonizer](https://bioinformaticshome.com/tools/descriptions/Genotype_harmonizer.html#gsc.tab=0), [Eagle](https://alkesgroup.broadinstitute.org/Eagle/), [Minimac3](https://genome.sph.umich.edu/wiki/Minimac3), [Minimac4](https://genome.sph.umich.edu/wiki/Minimac4)) must be installed prior to execution. 
 
 ## Contact Information
