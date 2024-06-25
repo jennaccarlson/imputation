@@ -20,15 +20,15 @@ This repository contains example code for imputation from "The extent to which a
 
 This example is given for chromosome 21 and contains code only. The data used in the manuscript are available at the links below.
   Whole-genome sequencing (WGS) data for reference panel: 
-    unphased [dbGaP phs000972.v5.p1](https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/study.cgi?study_id=phs000972.v5.p1)
-    phased was extracted for the same samples from the entire set of freeze 9 samples via the [TOPMed Exchange Area](https://topmed.nhlbi.nih.gov/)
-  Genotyping array data: [dbGaP phs000914.v1.p1](https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/study.cgi?study_id=phs000914.v1.p1) 
+    unphased [dbGaP phs000972.v5.p1](https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/study.cgi?study_id=phs000972.v5.p1)      
+    phased was extracted for the same samples from the entire set of freeze 9 samples via the [TOPMed Exchange Area](https://topmed.nhlbi.nih.gov/)         
+  Genotyping array data: [dbGaP phs000914.v1.p1](https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/study.cgi?study_id=phs000914.v1.p1)        
 
-The steps of imputation are as follows:
-  1. align the genotype data to the reference panel
-  2. phase the genotype array data
-  3. phase the reference panel (skip if starting with phased haplotypes)
-  4. impute genotypes
+The steps of imputation are as follows:            
+  1. align the genotype data to the reference panel        
+  2. phase the genotype array data      
+  3. phase the reference panel (skip if starting with phased haplotypes)        
+  4. impute genotypes         
 
 The code for these steps are in `01_align_example.sh`, `02_phase_geno_example.sh`, `03_phase_ref_example.sh`, and `04_impute_example.sh`. 
 
