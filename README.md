@@ -18,8 +18,8 @@ This work is licensed under a
 
 This repository contains example code for imputation from "The extent to which augmenting extant reference panels with population-specific sequences improves imputation quality in Samoans." The purpose of this repository is to provide guidance on performing in-house imputation to other researchers.
 
-This example is given for chromosome 21 and contains code only. The data used in the manuscript are available at the links below.
-  Whole-genome sequencing (WGS) data for reference panel: 
+This example is given for chromosome 21 and contains code only. The data used in the manuscript are available at the links below.            
+  Whole-genome sequencing (WGS) data for reference panel:         
     unphased [dbGaP phs000972.v5.p1](https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/study.cgi?study_id=phs000972.v5.p1)      
     phased was extracted for the same samples from the entire set of freeze 9 samples via the [TOPMed Exchange Area](https://topmed.nhlbi.nih.gov/)         
   Genotyping array data: [dbGaP phs000914.v1.p1](https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/study.cgi?study_id=phs000914.v1.p1)        
