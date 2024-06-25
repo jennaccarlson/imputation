@@ -1,9 +1,9 @@
 # Sample Code for Imputation
 
-Jenna C. Carlson
-University of Pittsburgh
-Copyright 2023, University of Pittsburgh, all rights reserve
-Shield: [![CC BY-NC-SA 4.0][cc-by-nc-sa-shield]][cc-by-nc-sa]
+Jenna C. Carlson      
+University of Pittsburgh        
+Copyright 2023, University of Pittsburgh, all rights reserved          
+[![CC BY-NC-SA 4.0][cc-by-nc-sa-shield]][cc-by-nc-sa]
 
 This work is licensed under a
 [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License][cc-by-nc-sa].
@@ -16,7 +16,7 @@ This work is licensed under a
 
 ## Sample Imputation Code
 
-This repository contains example code for imputation from "The extent to which augmenting extant reference panels with population-specific sequences improves imputation quality in Samoans." The purpose of this repository is to provide guidance on performing in-house imputation to other researchers.
+This repository contains example code for imputation from our paper "The extent to which augmenting extant reference panels with population-specific sequences improves imputation quality in Samoans" (preprint: [https://doi.org/10.1101/2023.10.31.23297835](https://doi.org/10.1101/2023.10.31.23297835) ) The purpose of this repository is to provide guidance on performing in-house imputation to other researchers.
 
 This example is given for chromosome 21 and contains code only. The data used in the manuscript are available at the links below.            
 * Whole-genome sequencing (WGS) data for reference panel:         
@@ -55,3 +55,7 @@ The software referenced above ([PLINK](https://www.cog-genomics.org/plink/), [bc
 ## Contact Information
 If you have questions or comments, please feel free to contact us.
 Jenna C. Carlson: jnc35@pitt.edu
+
+## Preprint
+
+Carlson JC, Krishnan M, Liu S, Anderson KJ, Zhang JZ, Yapp TJ, Chiyka EA, Dikec DA, Cheng H, Naseri T, Reupena MS, Viali S, Deka R, Hawley NL, McGarvey ST, Weeks DE, Minster RL. Improving imputation quality in Samoans through the integration of population-specific sequences into existing reference panels. medRxiv [Preprint]. 2023 Oct 31:2023.10.31.23297835. doi: 10.1101/2023.10.31.23297835. PMID: 37961708; PMCID: PMC10635250.
